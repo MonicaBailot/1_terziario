@@ -754,3 +754,17 @@ function fnc__specialcol_(values, context) {
 function fnc_project_color(values, context) {
     return false;
 };
+
+
+
+function exp_label_Titolodistudioterziario_1_eval_expression(context) {
+    // n_municipi
+
+    var feature = context.feature;
+    
+    if (feature.properties) {
+        return feature.properties['n_municipi'] ;
+    } else {
+        return feature['n_municipi'] ;
+    }
+}
